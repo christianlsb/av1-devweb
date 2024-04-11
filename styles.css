@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000000;
+}
+
+body {
+  background-color: #f7f8f7;
+}
+.menuMobile {
+  display: none;
+}
+
+.grid {
+  max-width: 1364px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+button {
+  padding: 12px 20px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+header {
+  height: 100px;
+  background-color: #f7f8f7;
+  position: fixed;
+  width: 100%;
+}
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+header nav ul li img {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  left: 7px;
+}
+
+#firstSession {
+  padding: 100px 0px;
+  background-color: #cafad9;
+}
+
+#firstSession .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#firstSession .content .text {
+  width: 60%;
+  margin-top: 20px;
+}
+
+#firstSession .content .text {
+  width: 40%;
+}
+
+#firstSession .content .text .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#firstSession .content .text p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+#firstSession .content .text .firstButton {
+  background-color: #7622d7;
+  color: #ffffff;
+  &:hover {
+    background: #cafad9;
+    border: 1px solid #000000;
+    color: #7622d7;
+    transition: 0.5s;
+  }
+}
+
+#firstSession .content .text .secondButton {
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: transparent;
+  &:hover {
+    background: #ffffff;
+    transition: 0.5s;
+  }
+}
+#inovation {
+  padding: 100px 0px;
+}
+
+#inovation h2 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 300;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+#inovation .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inovation .content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#inovation figure img {
+  width: 20px;
+  cursor: pointer;
+}
+
+#call {
+  background-color: #cafad9;
+}
+
+#call .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0px;
+}
+
+#call .content h2 {
+  font-size: 2.5em;
+}
+
+#call .content p {
+  font-size: 1.5em;
+  margin: 20px 0px;
+}
+
+#call .content button {
+  background-color: #7622d7;
+  color: #ffffff;
+  &:hover {
+    background: #cafad9;
+    border: 1px solid #000000;
+    color: #7622d7;
+    transition: 0.5s;
+  }
+}
+
+footer .content {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 40px;
+}
+
+footer .content .title {
+  font-size: 1.25em;
+}
+
+footer .content ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .content .redes li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .content .redes li img {
+  width: 25px;
+}
+
+footer .direitos {
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #firstSession .content {
+    flex-direction: column;
+  }
+  #firstSession .content .text {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #call .content p {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #inovation .content ul {
+    justify-content: center;
+  }
+  footer .content {
+    gap: 40px;
+  }
+  header nav ul {
+    display: none;
+  }
+  .menuMobile {
+    display: block;
+  }
+}
